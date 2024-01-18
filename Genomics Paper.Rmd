@@ -105,7 +105,7 @@ g_vs_val
 ```
 
 ```{r}
-#Plot for Gene vs Values without annotation
+#Plot for Gene vs Values with annotation
 
 g_vs_val_ann<-ggplot() +
   geom_point(data = Genomics_2, aes(x = Core, y = Gene, color = Tissue)) +
