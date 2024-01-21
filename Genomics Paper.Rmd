@@ -96,9 +96,9 @@ plot(Genomics_2$Core,Genomics_2$Margin)
 ```{r}
 #Plot for Gene vs Values without annotation
 
-g_vs_val<-ggplot() +
-  geom_point(data = Genomics_2, aes(x = Core, y = Gene, color = Tissue)) +
-  geom_point(data = Genomics_M, aes(x = Margin, y = Gene, color = Tissue)) 
+g_vs_val<-ggplot()+geom_point(data = Genomics_2, aes(x = Core, y = Gene, color = Tissue),size=5) +theme(axis.text=element_text(size=12),
+        axis.title=element_text(size=14,face="bold"),legend.text=element_text(size=15))+
+  geom_point(data = Genomics_M, aes(x = Margin, y = Gene, color = Tissue),size=5) 
 
 g_vs_val
 
